@@ -1,0 +1,30 @@
+\ifglsentryexists{inseq}{}%
+{%
+\gls@defglossaryentry{inseq}%
+{%
+name={\textit {inSeq}},%
+sort={\textit {inSeq}},%
+type={main},%
+first={\protect \textit {inSeq}},%
+firstplural={\protect \textit {inSeq}s},%
+text={\protect \textit {inSeq}},%
+plural={\protect \textit {inSeq}s},%
+description={Instant Sequenecing},%
+descriptionplural={Instant Sequenecing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

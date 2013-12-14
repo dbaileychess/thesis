@@ -1,0 +1,98 @@
+%%% SOME OF THIS CODE IS ADAPTED FROM THE VENERABLE withesis.cls
+
+% COPYRIGHT PAGE
+%  - To include a copyright page use \copyrightpage
+\copyrightpage
+
+% DEDICATION
+\begin{dedication}
+	\emph{To Becky, my Wife.}
+\end{dedication}
+
+%% BEGIN PAGESTYLE
+
+%%% You can pick a pagestyle if you want; see the memoir class
+%%% documentation for more info.  The default ``deposit'' option meets
+%%% the UW thesis typesetting requirements but is probably
+%%% unsatisfactory for making a version of your dissertation that
+%%% won't be deposited to the graduate school (e.g. for web or a nice
+%%% printed copy)
+
+\chapterstyle{deposit}
+\pagestyle{deposit}
+
+
+% ACKNOWLEDGMENTS
+\begin{acks}
+\input{frontmatter/acks}
+\end{acks}
+
+% CONTENTS, TABLES, FIGURES
+\renewcommand{\printtoctitle}[1]{\chapter*{#1}}
+\renewcommand{\printloftitle}[1]{\chapter*{#1}}
+\renewcommand{\printlottitle}[1]{\chapter*{#1}}
+
+\renewcommand{\tocmark}{}
+\renewcommand{\lofmark}{}
+\renewcommand{\lotmark}{}
+
+\renewcommand{\tocheadstart}{}
+\renewcommand{\lofheadstart}{}
+\renewcommand{\lotheadstart}{}
+
+\renewcommand{\aftertoctitle}{}
+\renewcommand{\afterloftitle}{}
+\renewcommand{\afterlottitle}{}
+
+\renewcommand{\cftchapterfont}{\normalfont} 
+%\renewcommand{\cftchapterpagefont}{\normalfont} 
+\renewcommand{\cftchapteraftersnum}{:} 
+\renewcommand{\cftchaptername}{Chapter\space}
+%\renewcommand{\cftsectionpresnum}{} 
+%\renewcommand{\cftchapterleader}{} 
+%\renewcommand{\cftsectionleader}{} 
+%\renewcommand{\cftchapterafterpnum}{\cftparfillskip} 
+%\renewcommand{\cftsectionafterpnum}{\cftparfillskip} 
+
+% From: http://tex.stackexchange.com/questions/60102/format-toc-for-thesis
+\titlecontents{section}[8em]{}{\hspace{-1em}}{}{\titlerule*[0.5pc]{.}\contentspage}
+
+
+% \captionnamefont{\small\sffamily} 
+% \captiontitlefont{\small\sffamily} 
+
+\renewcommand{\contentsname}{Table of Contents}
+% \renewcommand{\listfigurename}{list of figures}
+% \renewcommand{\listtablename}{list of tables}
+
+\tableofcontents
+
+\clearpage
+\listoftables
+
+\clearpage
+\listoffigures
+
+\clearpage
+% NOMENCLATURE
+% \begin{conventions}
+% % \begin{description}
+% % \item{\makebox[0.75in][l]{term}
+% %        \parbox[t]{5in}{definition\\}}
+% % \end{description}
+% \input{conventions}
+% \end{conventions}
+
+
+% ABSTRACT
+\begin{umiabstract}
+  \input{frontmatter/abstract}
+\end{umiabstract}
+
+\begin{abstract}
+  \input{frontmatter/abstract}
+\end{abstract}
+
+\clearpage\pagenumbering{arabic}
+
+%%% END STUFF TAKEN FROM WITHESIS EXAMPLE FILE
