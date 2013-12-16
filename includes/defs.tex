@@ -28,6 +28,10 @@
 \newenvironment{wbepi}[1]{\begin{quote}\renewcommand{\wb@episource}{#1}\itshape}{\par\upshape \raggedleft --- \textsc{\wb@episource}\\ \end{quote}}
 \makeatother
 
+\def\mz{\textit{m/z}}
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\providecommand{\fragment}[2]{\ensuremath{#1_{#2}}}
+
 %%%%% SVN
 \IfFileExists{svn-multi.sty}{%
 \usepackage{svn-multi}%
