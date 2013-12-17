@@ -32,20 +32,4 @@
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
 \providecommand{\fragment}[2]{\ensuremath{#1_{#2}}}
 
-%%%%% SVN
-\IfFileExists{svn-multi.sty}{%
-\usepackage{svn-multi}%
-%%% Uncomment the second one and comment out the first one if you want
-%%% to include subversion revision information in each file.
-\newcommand{\vcinfo}{}%
-%\newcommand{\vcinfo}{\begin{centering}\fbox{\fbox{\parbox{5in}{Author: \svnauthor\\Revision: \svnfilerev\\Last changed on: \svnfiledate\\URL: \svnkw{HeadURL}}}}\\[1em]\end{centering}}%
-}{%
-\newcommand{\svnidlong}[4]{}%
-\newcommand{\svnfilerev}{}%
-\newcommand{\svnauthor}{}%
-\newcommand{\svnfiledate}{}%
-\newcommand{\svnkw}{}%
-\newcommand{\vcinfo}{}%
-}
-
 %%%%% end convenience definitions

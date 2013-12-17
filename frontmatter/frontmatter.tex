@@ -32,7 +32,8 @@
 \renewcommand{\printloftitle}[1]{\chapter*{#1}}
 \renewcommand{\printlottitle}[1]{\chapter*{#1}}
 
-\renewcommand{\tocmark}{}
+%\renewcommand{\tocmark}{}
+\renewcommand{\tocmark}{\markboth{test}{Table of Contents Continued...}}
 \renewcommand{\lofmark}{}
 \renewcommand{\lotmark}{}
 
@@ -47,7 +48,7 @@
 \renewcommand{\cftchapterfont}{\normalfont} 
 %\renewcommand{\cftchapterpagefont}{\normalfont} 
 \renewcommand{\cftchapteraftersnum}{:} 
-\renewcommand{\cftchaptername}{Chapter\space}
+\renewcommand{\cftchaptername}{Chapter~}
 %\renewcommand{\cftsectionpresnum}{} 
 %\renewcommand{\cftchapterleader}{} 
 %\renewcommand{\cftsectionleader}{} 
@@ -56,7 +57,6 @@
 
 % From: http://tex.stackexchange.com/questions/60102/format-toc-for-thesis
 \titlecontents{section}[8em]{}{\hspace{-1em}}{}{\titlerule*[0.5pc]{.}\contentspage}
-
 
 % \captionnamefont{\small\sffamily} 
 % \captiontitlefont{\small\sffamily} 
